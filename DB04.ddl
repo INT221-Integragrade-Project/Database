@@ -23,7 +23,7 @@ ALTER TABLE color ADD CONSTRAINT color_pk PRIMARY KEY ( colorid );
 CREATE TABLE product (
     productid          VARCHAR(10) NOT NULL,
     productname        VARCHAR(30) NOT NULL,
-    price              double(5,2) NOT NULL,
+    price              double(7,2) NOT NULL,
     warranty           int(1) NOT NULL,
     menufacturrerdate  DATE NOT NULL,
     capacity           int(2) NOT NULL,
