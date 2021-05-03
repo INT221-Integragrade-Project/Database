@@ -1,20 +1,20 @@
-INSERT INTO brand(BrandId, BrandName) VALUES('B0001', 'Apple');
-INSERT INTO brand(BrandId, BrandName) VALUES('B0002', 'Oppo');
-INSERT INTO brand(BrandId, BrandName) VALUES('B0003', 'Samsung');
-INSERT INTO brand(BrandId, BrandName) VALUES('B0004', 'Vivo');
+INSERT INTO brand(BrandId, BrandName) VALUES(10001, 'Apple');
+INSERT INTO brand(BrandId, BrandName) VALUES(10002, 'Oppo');
+INSERT INTO brand(BrandId, BrandName) VALUES(10003, 'Samsung');
+INSERT INTO brand(BrandId, BrandName) VALUES(10004, 'Vivo');
 
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0001', 'Purple', '#B6B0E2');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0002', 'Blue', '#153B60');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0003', 'Light Green', '#DCEDD7');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0004', 'Red', '#C73F37');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0005', 'Gold', '#EFCFBC');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0006', 'Black', '#24212A');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0007', 'White', '#FFFFFF');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0008', 'Yellow', '#F2D160');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0009', 'Orange', '#ED7662');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0010', 'Silver', '#E3E4DF');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0011', 'Gray', '#52514D');
-INSERT INTO color(colorId, ColorName, ColorCode) VALUES('C0012', 'Rose Gold', '#E6C6C2');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20001, 'Purple', '#B6B0E2');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20002, 'Blue', '#153B60');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20003, 'Light Green', '#DCEDD7');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20004, 'Red', '#C73F37');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20005, 'Gold', '#EFCFBC');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20006, 'Black', '#24212A');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20007, 'White', '#FFFFFF');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20008, 'Yellow', '#F2D160');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20009, 'Orange', '#ED7662');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20010, 'Silver', '#E3E4DF');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20011, 'Gray', '#52514D');
+INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20012, 'Rose Gold', '#E6C6C2');
 
 INSERT INTO product(ProductId, ProductName, Price, Warranty, MenufacturrerDate, Capacity, Description, Images, brandId) VALUES(10001, 'iPad gen8', 10900.00, 1, '2020-10-02', 64, '10.2-inch display, Supports Apple Pencil (1st generation), A12 Bionic chip with Neural Engine,  8 MP wide camera, 3,687 mAh battery', 'PA1', 'B0001');
 INSERT INTO product(ProductId, ProductName, Price, Warranty, MenufacturrerDate, Capacity, Description, Images, brandId) VALUES(10002, 'iPad Pro 2020', 27900.00, 1, '2020-03-20', 128, '11-inch and 12-inch display, Supports Apple Pencil (2nd generation) and Smart Keyboard, A12Z Bionic chip with Neural Engine, 12 MP wide camera and 10 MP ultrawide cameram 7,812 mAh battery', 'PA2', 'B0001');
