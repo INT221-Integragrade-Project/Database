@@ -29,15 +29,15 @@ CREATE TABLE product (
     brandid            int(5) NOT NULL
 );
 
+ALTER TABLE product
+    ADD CONSTRAINT product_brand_fk FOREIGN KEY ( brandid )
+        REFERENCES brand ( brandid );
+
 CREATE TABLE productcolor (
     productcolorid  int(6) NOT NULL auto_increment PRIMARY KEY,
     productid       int(5) NOT NULL,
     colorid         int(5) NOT NULL
 );
-
-ALTER TABLE product
-    ADD CONSTRAINT product_brand_fk FOREIGN KEY ( brandid )
-        REFERENCES brand ( brandid );
 
 ALTER TABLE productcolor
     ADD CONSTRAINT productcolorv2_color_fk FOREIGN KEY ( colorid )
