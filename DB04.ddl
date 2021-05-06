@@ -47,3 +47,6 @@ ALTER TABLE productcolor
     ADD CONSTRAINT productcolorv2_product_fk FOREIGN KEY ( productid )
         REFERENCES product ( productid );
 
+ALTER TABLE productcolor
+    ADD CONSTRAINT productcolorv2_product_uq unique ( productid, colorid );
+
