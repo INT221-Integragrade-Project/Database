@@ -1,0 +1,13 @@
+version: "2.2"
+services:
+  backend:
+    container_name: "database"
+    build: .
+    image: mysql/mysql-server:8.0.23
+    volumes:
+      - /home/project/Backend/project/public:/tmp
+    ports:
+      - "3306:3306"
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql

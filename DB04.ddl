@@ -1,11 +1,3 @@
--- DROP TABLE brand;
-
--- DROP TABLE color;
-
--- DROP TABLE product;
-
--- DROP TABLE productcolor;
-
 CREATE TABLE brand (
     brandid    int(5) NOT NULL auto_increment PRIMARY KEY,
     brandname  VARCHAR(20) NOT NULL
@@ -25,7 +17,7 @@ CREATE TABLE product (
     menufacturrerdate  DATE NOT NULL,
     capacity           int(2) NOT NULL,
     description        VARCHAR(500) NOT NULL,
-    images             varchar(20) NOT NULL,
+    images             varchar(50) NOT NULL,
     brandid            int(5) NOT NULL
 );
 
