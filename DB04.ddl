@@ -1,3 +1,12 @@
+
+DROP TABLE brand;
+
+DROP TABLE color;
+
+DROP TABLE product;
+
+DROP TABLE productcolor;
+
 CREATE TABLE brand (
     brandid    int(5) NOT NULL auto_increment PRIMARY KEY,
     brandname  VARCHAR(20) NOT NULL
@@ -17,19 +26,24 @@ CREATE TABLE product (
     menufacturrerdate  DATE NOT NULL,
     capacity           int(2) NOT NULL,
     description        VARCHAR(500) NOT NULL,
+<<<<<<< HEAD
     images             varchar(50) NOT NULL,
+=======
+    images             VARCHAR(350) NOT NULL,
+>>>>>>> d983e1f8ccfbc025a9f12fc6de1ca236eb3218fb
     brandid            int(5) NOT NULL
+);
+
+CREATE TABLE productcolor (
+    productcolorid  int(6) NOT NULL auto_increment PRIMARY KEY,
+    productid       int(5) NOT NULL,
+    colorid         int(5) NOT NULL,
+	UNIQUE (productid,colorid)
 );
 
 ALTER TABLE product
     ADD CONSTRAINT product_brand_fk FOREIGN KEY ( brandid )
         REFERENCES brand ( brandid );
-
-CREATE TABLE productcolor (
-    productcolorid  int(6) NOT NULL auto_increment PRIMARY KEY,
-    productid       int(5) NOT NULL,
-    colorid         int(5) NOT NULL
-);
 
 ALTER TABLE productcolor
     ADD CONSTRAINT productcolorv2_color_fk FOREIGN KEY ( colorid )
