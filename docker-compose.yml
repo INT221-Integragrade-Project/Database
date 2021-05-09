@@ -1,7 +1,7 @@
 version: "2.2"
 services:
   backend:
-    container_name: "database"
+    container_name: "database01"
     build: .
     image: mysql/mysql-server:8.0.23
     volumes:
