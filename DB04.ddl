@@ -26,11 +26,7 @@ CREATE TABLE product (
     menufacturrerdate  DATE NOT NULL,
     capacity           int(2) NOT NULL,
     description        VARCHAR(500) NOT NULL,
-<<<<<<< HEAD
-    images             varchar(50) NOT NULL,
-=======
     images             VARCHAR(350) NOT NULL,
->>>>>>> d983e1f8ccfbc025a9f12fc6de1ca236eb3218fb
     brandid            int(5) NOT NULL
 );
 
